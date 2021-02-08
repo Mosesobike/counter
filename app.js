@@ -13,6 +13,15 @@ let count = 0;
          }else if(styles.contains("reset")){
              count = 0
          }
+         if(count > 0){
+             value.style.color = "green"
+         }
+         if(count < 0){
+             value.style.color = "red"
+         }
+         if (count === 0){
+             value.style.color = "#222"
+         }
         value.textContent = count;
 
      });
